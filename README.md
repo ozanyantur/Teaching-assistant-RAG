@@ -51,7 +51,7 @@ ollama pull bge-m3
 ### 2. Clone & Environment Setup
 
 ```bash
-git clone https://github.com/<your-username>/teaching-assistant-RAG.git
+git clone https://github.com/<ozanyantur>/teaching-assistant-RAG.git
 cd teaching-assistant-RAG
 
 python -m venv venv
