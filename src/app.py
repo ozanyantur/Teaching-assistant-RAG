@@ -26,7 +26,7 @@ with st.sidebar:
     if st.button("Index Uploaded Files") and uploaded_files:
         with st.spinner("Indexing uploaded PDFs..."):
             for uploaded_file in uploaded_files:
-                save_path = Path(uploaded_file.name).name
+                save_path = PDF_FOLDER / Path(uploaded_file.name).name
                 with open(save_path, "wb") as f:
                     f.write(uploaded_file.getbuffer())
                 ingest_pdf(str(save_path))
